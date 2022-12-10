@@ -204,7 +204,7 @@ img {
 }
 
 .home__container {
-    height: calc(100vh - var(--header-height));
+    height: calc(80vh - var(--header-height));
     row-gap: 5rem;
 }
 
@@ -451,9 +451,8 @@ img {
 /* ===== MEDIA QUERIES =====*/
 /* For small devices */
 @media screen and (max-width: 450px) {
-    .home__img {
-        visibility: hidden;
-        display: none;
+    .home__title{
+        font-size: 5rem;
     }
 }
 
