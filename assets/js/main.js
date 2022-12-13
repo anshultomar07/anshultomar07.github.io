@@ -78,3 +78,7 @@ sr.reveal('.contact__subtitle', {})
 sr.reveal('.contact__text', {interval: 20})
 sr.reveal('.contact__input', {delay: 400})
 sr.reveal('.contact__button', {delay: 600})
+
+
+
+

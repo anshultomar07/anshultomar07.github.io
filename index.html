@@ -1,130 +1,196 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- ===== BOX ICONS ===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Anshul's Portfolio website</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
+    <!-- ===== BOX ICONS ===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Anshul's Portfolio website</title>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Anshul Tomar</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Achievements</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <h1 class="home__title"><span>HELLO.</span></h1>
+
+                <div class="home__scroll">
+                    <a href="https://drive.google.com/file/d/1VPrJ9ONQRW3XcO07RWKo3NZw7YqfCNwC/view?usp=share_link"
+                        class="home__scroll-link" target="_blank"><i class="fa fa-file-text-o" style="font-size:22px;color:#000000;font-weight: bolder;"></i> Resume</a>
+                </div>
+                <!-- <i class='bx bx-down-arrow-alt'></i> -->
+                <!-- <img src="assets/img/my_photo.png" alt="" class="home__img"> -->
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/my_photo.png" alt="">
+                </div>
+
                 <div>
-                    <a href="#" class="nav__logo">Anshul Tomar</a>
-                </div>
+                    <h2 class="about__subtitle">Anshul Tomar</h2>
+                    <p class="about__text">I'm a 20 year old student currently pusrsuing Bachelor's Degree in Information Technology.</p>
+                    <p class="about__text">I'm a Software Development Enthusiast.</p>
+                    <p class="about__text">I love to code and also have interest in Web Development.</p>
+                    <p class="about__text">I'm also an NCC Cadet.</p>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#portfolio" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home" id="home">
-                <div class="home__container bd-grid">
-                    <h1 class="home__title"><span>HELLO.</span></h1>
-
-                    <!-- <div class="home__scroll">
-                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
-                    </div> -->
-
-                    <!-- <img src="assets/img/my_photo.png" alt="" class="home__img"> -->
-                </div>
-            </section>
-            
-            <!--===== ABOUT =====-->
-            <section class="about section" id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/my_photo.png" alt="">
-                    </div>
-
-                    <div>
-                        <h2 class="about__subtitle">I'm Anshul Tomar</h2>
-                        <!-- <span class="about__profession">Web designer</span> -->
-                        <p class="about__text">I'm a Software Development Enthusiast.</p>
-                        <p class="about__text">I love to code and also have interest in Web Development.</p>
-                        <p class="about__text">I'm also an NCC Cadet.</p>
-
-                        <!-- <div class="about__social">
+                    <!-- <div class="about__social">
                             <a href="#" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
                             <a href="#" class="about__social-icon"><i class='bx bxl-github' ></i></a>
                             <a href="#" class="about__social-icon"><i class='bx bxl-dribbble' ></i></a>
                         </div> -->
-                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!--===== Education =====-->
-            <section class="education section" id="education">
-                <h2 class="section-title">Education</h2>
+        <!--===== Education =====-->
+        <section class="education section" id="education">
+            <h2 class="section-title">Education</h2>
 
-                <div class="education__container bd-grid">
-                    <div>
-                        <h2 class="education__subtitle">Bachelor of Engineering (B.E.), Information Technology</h2>
-                        <p class="education__text">University Institute of Engineering and Technology,<br>Panjab University, Chandigarh</p>
-                        <p class="education__text">2020-2024</p>
-                    </div>
-                    <div>
-                        <h2 class="education__subtitle">Senior Secondary (XII), Science</h2>
-                        <p class="education__text">Gyan Ganga International Academy, Bhopal</p>
-                        <p class="education__text">CBSE Board</p>
-                        <p class="education__text">Year of completion: 2019</p>
-                        <p class="education__text">Percentage: 92.6%</p>
-                    </div>
-                    <div>
-                        <h2 class="education__subtitle">Higher Secondary (X)</h2>
-                        <p class="education__text">Gyan Ganga International Academy, Bhopal</p>
-                        <p class="education__text">CBSE Board</p>
-                        <p class="education__text">Year of completion: 2017</p>
-                        <p class="education__text">CGPA: 10</p>
-                    </div>
+            <div class="education__container bd-grid">
+                <div>
+                    <h2 class="education__subtitle">Bachelor of Engineering (B.E.), Information Technology</h2>
+                    <p class="education__text">University Institute of Engineering and Technology,<br>Panjab University,
+                        Chandigarh</p>
+                    <p class="education__text">2020-2024</p>
                 </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">
-                    <div class="skills__box">
-                        <!-- <h3 class="skills__subtitle">Development</h3> -->
-                        <span class="skills__name">Data Structures and Algorithms</span>
-                        <span class="skills__name">C++</span>
-                        <span class="skills__name">Python</span>
-                        <span class="skills__name">HTML</span>
-                        <span class="skills__name">CSS</span>
-                        <span class="skills__name">Javascript</span>
-                    </div>
-
-                    <div class="skills__img">
-                        <!-- <img src="https://i.imgur.com/rn6EVPB.jpg" alt=""> -->
-                        <img src="assets/img/skills.jpg" alt="">
-                    </div>
+                <div>
+                    <h2 class="education__subtitle">Senior Secondary (XII), Science</h2>
+                    <p class="education__text">Gyan Ganga International Academy, Bhopal</p>
+                    <p class="education__text">CBSE Board</p>
+                    <p class="education__text">Year of completion: 2019</p>
+                    <p class="education__text">Percentage: 92.6%</p>
                 </div>
-            </section>
+                <div>
+                    <h2 class="education__subtitle">Higher Secondary (X)</h2>
+                    <p class="education__text">Gyan Ganga International Academy, Bhopal</p>
+                    <p class="education__text">CBSE Board</p>
+                    <p class="education__text">Year of completion: 2017</p>
+                    <p class="education__text">CGPA: 10</p>
+                </div>
+            </div>
+        </section>
 
-            <!--===== PORTFOLIO =====-->
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div class="skills__box">
+                    <!-- <h3 class="skills__subtitle">Development</h3> -->
+                    <span class="skills__name">Data Structures and Algorithms</span>
+                    <span class="skills__name">C++</span>
+                    <span class="skills__name">Python</span>
+                    <span class="skills__name">HTML</span>
+                    <span class="skills__name">CSS</span>
+                    <span class="skills__name">Javascript</span>
+                    <span class="skills__name">SQL</span>
+                </div>
+
+                <div class="skills__img">
+                    <!-- <img src="https://i.imgur.com/rn6EVPB.jpg" alt=""> -->
+                    <img src="assets/img/skills.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--===== PROJECTS =====-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section-title">ACHIEVEMENTS</h2>
+
+            <div class="portfolio__container bd-grid ">
+                <div class="portfolio__img">
+                    <img src="assets/img/cropped_image.png" alt="">
+
+                    <a href="https://www.cloudskillsboost.google/public_profiles/99ff73a3-e238-448c-9f0d-111038a91dbd"
+                        class="portfolio__link-name" target="_blank">
+                        <div class="portfolio__link">View details</div>
+                    </a>
+                    <p>Completed Learn to Earn Cloud Security Challenge</p>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/cropped_image6.png" alt="">
+
+                    <a href="#" class="portfolio__link-name" target="_blank">
+                        <div class="portfolio__link">View details</div>
+                    </a>
+                    <p>NCC B Certificate</p>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/cropped_image3.png" alt="">
+
+                    <a href="https://drive.google.com/file/d/1Eex7-GLgWCsmm67oo6uZj9h24gcc5wLJ/view?usp=share_link" class="portfolio__link-name" target="_blank">
+                        <div class="portfolio__link">View details</div>
+                    </a>
+                    <p>NCC Army Attachment Camp Certificate</p>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/cropped_image4.png" alt="">
+
+                    <a href="https://drive.google.com/file/d/1EbyFAkmfVgmH6NhtjxUAxCB_Uevgse7v/view?usp=share_link" class="portfolio__link-name" target="_blank">
+                        <div class="portfolio__link">View details</div>
+                    </a>
+                    <p>NCC Annual Training Camp Certificate</p>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/cropped_image5.png" alt="">
+
+                    <a href="https://leetcode.com/anshultomar55423/"
+                        class="portfolio__link-name" target="_blank">
+                        <div class="portfolio__link">View details</div>
+                    </a>
+                    <p>330+ Questions solved on Leetcode</p>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/cropped_image2.png" alt="">
+
+                    <a href="https://www.codingninjas.com/codestudio/profile/2f374521-d628-47f9-9b7d-7a1576fe1c16"
+                        class="portfolio__link-name" target="_blank">
+                        <div class="portfolio__link">View details</div>
+                    </a>
+                    <p>Expert Badge on CodeStudio by Coding Ninjas</p>
+                </div>
+            </div>
+        </section>
+        <!-- ===== PROJECTS =====
             <section class="portfolio section" id="portfolio">
                 <h2 class="section-title">Projects</h2>
 
@@ -172,26 +238,26 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
 
-                <div class="contact__container bd-grid">
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">EMAIL</h3>
-                        <span class="contact__text">anshultomar651@gmail.com <br>anshultomar55423@gmail.com</span>
-                    </div>
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">PHONE</h3>
-                        <span class="contact__text">+91 7470570156 <br>+91 7000013681 </span>
-                    </div>
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">ADDRESS</h3>
-                        <span class="contact__text">Gwalior, Madhya Pradesh</span>
-                    </div>
-                    <!-- <form action="" class="contact__form">
+            <div class="contact__container bd-grid">
+                <div class="contact__info">
+                    <h3 class="contact__subtitle"><i class="material-icons" style="font-size:18px;color:#c1501c">mail</i> EMAIL</h3>
+                    <span class="contact__text">anshultomar651@gmail.com <br>anshultomar55423@gmail.com</span>
+                </div>
+                <div class="contact__info">
+                    <h3 class="contact__subtitle"><i class="material-icons" style="font-size:18px;color:#c1501c">phone</i> PHONE</h3>
+                    <span class="contact__text">+91 7470570156</span>
+                </div>
+                <div class="contact__info">
+                    <h3 class="contact__subtitle"><i class="material-icons" style="font-size:18px;color:#c1501c">place</i> ADDRESS</h3>
+                    <span class="contact__text">Gwalior, Madhya Pradesh</span>
+                </div>
+                <!-- <form action="" class="contact__form">
                         <div class="contact__inputs">
                             <input type="text" placeholder="Name" class="contact__input">
                             <input type="mail" placeholder="Email" class="contact__input">
@@ -201,45 +267,50 @@
 
                         <input type="submit" value="Enviar" class="contact__button">
                     </form> -->
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer section">
-            <div class="footer__container bd-grid">
-                <div class="footer__data">
-                    <h2 class="footer__title">Anshul Tomar</h2>
-                    <p class="footer__text">This is my personal website</p>
-                </div>
-
-                <div class="footer__data">
-                    <h2 class="footer__title">EXPLORE</h2>
-                    <ul>
-                        <li><a href="#home" class="footer__link">Home</a></li>
-                        <li><a href="#about" class="footer__link">About</a></li>
-                        <li><a href="#skills" class="footer__link">Skills</a></li>
-                        <li><a href="#portfolio" class="footer__link">Projects</a></li>
-                        <li><a href="#Contact" class="footer__link">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer__data">
-                    <h2 class="footer__title">FOLLOW</h2>
-                    <!-- <a href="#" class="footer__social"><i class='bx bxl-facebook' ></i></a> -->
-                    <a href="https://instagram.com/__anshul_tomar__?igshid=ZDdkNTZiNTM=" class="footer__social" target="_blank"><i class='bx bxl-instagram'></i></a>
-                    <a href="https://www.linkedin.com/in/anshultomar651" class="footer__social" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-                    <!-- <a href="#" class="footer__social"><i class='bx bxl-twitter' ></i></a> -->
-                </div>
-
-
             </div>
-        </footer>
+        </section>
+    </main>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <!--===== FOOTER =====-->
+    <footer class="footer section">
+        <div class="footer__container bd-grid">
+            <div class="footer__data">
+                <h2 class="footer__title">Anshul Tomar</h2>
+                <p class="footer__text">This is my personal website</p>
+            </div>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+            <div class="footer__data">
+                <h2 class="footer__title">EXPLORE</h2>
+                <ul>
+                    <li><a href="#home" class="footer__link">Home</a></li>
+                    <li><a href="#about" class="footer__link">About</a></li>
+                    <li><a href="#skills" class="footer__link">Skills</a></li>
+                    <li><a href="#portfolio" class="footer__link">Projects</a></li>
+                    <li><a href="#Contact" class="footer__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__data">
+                <h2 class="footer__title">FOLLOW</h2>
+                <!-- <a href="#" class="footer__social"><i class='bx bxl-facebook' ></i></a> -->
+                <a href="https://instagram.com/__anshul_tomar__?igshid=ZDdkNTZiNTM=" class="footer__social"
+                    target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/anshultomar651" class="footer__social" target="_blank"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/anshultomar07" class="footer__social" target="_blank"><i
+                        class='bx bxl-github'></i></a>
+                <!-- <a href="#" class="footer__social"><i class='bx bxl-twitter' ></i></a> -->
+            </div>
+
+
+        </div>
+    </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
